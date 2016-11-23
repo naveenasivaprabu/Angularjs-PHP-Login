@@ -1,0 +1,15 @@
+<div class="bs1-example1" align="center">
+    <form role="form" name="loginForm">
+        <div class="focus">
+            <p>Hello Dear Welcome to Angular Login <span>{{user.mail}}</span></p>
+            <label for="exampleInputEmail1">Write Your User Name</label>
+            <input type="text" placeholder="Write Your  username"  ng-model="user.mail" required>
+        </div>
+        <div class="focus">
+            <label for="exampleInputPassword1">Write Your Password</label>
+            <input type="password" placeholder="Write Your Password"  id="exampleInputPassword1" ng-model="user.pass" required>
+        </div>
+        <button type="submit" ng-click="login(user)" ng-disabled="loginForm.$invalid">Submit</button>
+        <p>{{msgtxt}}</p>
+    </form>
+</div>
